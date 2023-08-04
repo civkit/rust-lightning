@@ -1,5 +1,5 @@
-Contributing to Rust-Lightning
-==============================
+Contributing to Rust-Lightning-Wizards
+======================================
 
 The `rust-lightning` project operates an open contributor model where anyone is
 welcome to contribute towards development in the form of peer review,
@@ -12,28 +12,6 @@ testing and risk-minimization. Any bug may cost users real money. That being
 said, we deeply welcome people contributing for the first time to an open source
 project or pick up Rust while contributing. Don't be shy, you'll learn.
 
-For the project Code of Conduct, see our [website](https://lightningdevkit.org/code_of_conduct).
-
-Communication Channels
------------------------
-
-Communication about the development of LDK and `rust-lightning` happens
-primarily on the [LDK Discord](https://discord.gg/5AcknnMfBw) in the `#ldk-dev`
-channel. Additionally, live LDK development meetings are held every other
-Monday 17:00 UTC in the [LDK Dev Jitsi Meeting
-Room](https://meet.jit.si/ldkdevmeeting). Upcoming events can be found in the
-[LDK calendar](https://calendar.google.com/calendar/embed?src=c_e6fv6vlshbpoob2mmbvblkkoj4%40group.calendar.google.com).
-
-Contributors starting out with the Rust language are welcome to discuss and ask
-for help in the `#rust-101` channel on LDK Discord.
-
-Discussion about code base improvements happens in GitHub issues and on pull
-requests.
-
-The LDK roadmap is tracked [here](https://github.com/orgs/lightningdevkit/projects/2).
-
-Major milestones are tracked [here](https://github.com/lightningdevkit/rust-lightning/milestones?direction=asc&sort=title&state=open).
-
 Getting Started
 ---------------
 
@@ -43,18 +21,9 @@ This doesn't mean don't be ambitious with the breadth and depth of your
 contributions but rather understand the project culture before investing an
 asymmetric number of hours on development compared to your merged work.
 
-Browsing through the [meeting minutes](https://github.com/lightningdevkit/rust-lightning/wiki/Meeting-Notes)
-is a good first step. You will learn who is working on what, how releases are
-drafted, what are the pending tasks to deliver, where you can contribute review
-bandwidth, etc.
-
 Even if you have an extensive open source background or sound software
 engineering skills, consider that the reviewers' comprehension of the code is as
 much important as technical correctness.
-
-It's very welcome to ask for review on LDK Discord. And also for reviewers, it's
-nice to provide timelines when you hope to fulfill the request while bearing in
-mind for both sides that's a "soft" commitment.
 
 If you're eager to increase the velocity of the dev process, reviewing other
 contributors work is the best you can do while waiting review on yours.
@@ -143,16 +112,6 @@ methods (usually `Writeable::write` and `ReadableArgs::read`) begin with
 Updates to the serialized format which has implications for backwards or
 forwards compatibility must be included in release notes.
 
-Security
---------
-
-Security is the primary focus of `rust-lightning`; disclosure of security
-vulnerabilites helps prevent user loss of funds. If you believe a vulnerability
-may affect other Lightning implementations, please inform them.
-
-You can find further information on submitting (possible) vulnerabilities in the
-[security policy](SECURITY.md).
-
 Testing
 -------
 
@@ -166,18 +125,6 @@ Fuzzing is heavily encouraged: you will find all related material under `fuzz/`
 
 Mutation testing is work-in-progress; any contribution there would be warmly
 welcomed.
-
-C/C++ Bindings
---------------
-
-You can learn more about the C/C++ bindings that are made available by reading
-the [C/C++ Bindings README](https://github.com/lightningdevkit/ldk-c-bindings/blob/main/lightning-c-bindings/README.md).
-If you are not using the C/C++ bindings, you likely don't need to worry about
-them, and during their early experimental phase we are not requiring that pull
-requests keep the bindings up to date (and, thus, pass the `bindings_check` CI
-run). If you wish to ensure your PR passes the bindings generation phase, you
-should run the `genbindings.sh` script in the top of the directory tree to
-generate, build, and test C bindings on your local system.
 
 Going further
 -------------
