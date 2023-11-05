@@ -1,0 +1,10 @@
+[package]
+name = "lightning-risk-engine"
+authors = ["Antoine Riard"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/civkit/rust-lightning-wizards.git"
+description = """
+Risk management engine to allow Rust Lightning users to hedge lightning security risks.
+"""
+version = "0.0.1"
+edition = "2018"
